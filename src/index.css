@@ -1,13 +1,80 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  font-family: "Roboto", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  width: 180px;
+  background-color: rgb(64, 64, 64);
+}
+
+.input-container > p {
+  width: 100%;
+  text-align: right;
+  margin-right: 5px;
+  color: rgb(233, 233, 233);
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.button-row > p {
+  padding: 10px;
+  margin: 0;
+  color: rgb(233, 233, 233);
+  background-color: rgb(109, 103, 108);
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgb(65, 65, 65);
+  border-left: 1px solid rgb(65, 65, 65);
+}
+
+.button-row:first-of-type > p {
+  background-color: rgb(75, 75, 75) !important;
+}
+
+.button-operator {
+  background-color: rgb(253, 158, 43) !important;
+}
+
+.button-row > p:last-of-type {
+  border-right: 1px solid rgb(65, 65, 65);
 }
